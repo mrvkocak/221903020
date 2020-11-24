@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace alancevrehesaplama
+{
+    class Program
+    {
+        static int AlanBul(int p, int h)
+        {
+            int alan = p * h;
+            return alan;
+        }
+        static int CevreBul(int p, int h)
+        {
+            int cevre = 2 * (p + h);
+            return cevre;
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Kısa kenarı giriniz:");
+            int kk = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Uzunkenarı giriniz:");
+            int uk = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Dikdörtgenin Alanı {0}", AlanBul(kk, uk));
+            Console.WriteLine("Dikdörtgenin Çevresi {0}", CevreBul(kk, uk));
+            Console.ReadKey();
+        }
+
+    }
+
+    public class dikdörtgen
+    {
+        public int h, p;
+    }
+}
