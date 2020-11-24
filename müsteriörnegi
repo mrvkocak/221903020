@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace musteriörn
+{
+    class Program
+    {
+        
+
+
+        static void Main(string[] args)
+        {
+            string musterisekli,ad,soyad,meslek;
+            int yas, ögrno, maas;
+            Console.Write("musteri tipi seçiniz(öğrenci/normal):");
+            musterisekli = Console.ReadLine();
+
+            if (musterisekli == "öğrenci")
+            {
+                Console.WriteLine("Adınızı Giriniz;");
+                ad = Console.ReadLine();
+                Console.WriteLine("Soyadınızı Giriniz;");
+                soyad = Console.ReadLine();
+                Console.WriteLine("Yaşınızı Giriniz;");
+                yas = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Ögrenci No Giriniz;");
+                ögrno = Convert.ToInt32(Console.ReadLine());
+            }
+            else
+            {
+                Console.WriteLine("Adınızı Giriniz;");
+                ad = Console.ReadLine();
+                Console.WriteLine("Soyadınızı Giriniz;");
+                soyad = Console.ReadLine();
+                Console.WriteLine("Yaşınızı Giriniz;");
+                yas = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Mesleğinizi Giriniz;");
+                meslek = Console.ReadLine();
+                Console.WriteLine("Maaşınızı Giriniz;");
+                maas = Convert.ToInt32(Console.ReadLine());
+            }
+                
+
+            Console.ReadKey();
+
+        }
+    }
+    public class musteri
+    {
+        public string ad, soyad, meslek;
+        public int ögrno, yas, maas;
+    }
+}
